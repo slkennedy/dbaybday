@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@unumux/ui-framework": "^2.2.1"
+  }
+}
