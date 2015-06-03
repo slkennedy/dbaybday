@@ -9,7 +9,18 @@ body {
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  border: red solid 1px; }
+  border: red solid 100px;
+  padding: 20px; }
+
+.flip-clock-wrapper {
+  width: 690px;
+  margin: 0 auto; }
+
+h1, h2 {
+  margin: 0; }
+
+.clock {
+  margin: 40px; }
 
 
 /*# sourceMappingURL=site.css.map */
