@@ -2,15 +2,16 @@
   box-sizing: border-box; }
 
 body {
-  background: #dedede;
-  color: #111; }
+  background: #FDB632;
+  padding: 0; }
 
-.page-wrapper {
+.container {
   text-align: center;
   width: 80%;
   margin: 0 auto; }
 
 h1 {
+  color: #801638;
   font-family: 'Fredericka the Great', cursive;
   font-weight: 400;
   font-size: 85px; }
@@ -22,6 +23,9 @@ h1 {
       -webkit-transform: scale(0.5);
       -ms-transform: scale(0.5);
       transform: scale(0.5); } }
+
+.clockRow {
+  background-color: #F37338; }
 
 
 /*# sourceMappingURL=site.css.map */
