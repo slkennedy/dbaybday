@@ -1,4 +1,4 @@
-(function () {
+(function ($) {
 	var now = new Date();
 	
 	var daniel = {
@@ -19,7 +19,13 @@
 			return age;
 		},
 		get timeUntilBDay() {
-			return 3600*24*17;
+			var bDay = new Date(now.getFullYear(), daniel.bday.month, daniel.bday.day, daniel.bday.hour, daniel.bday.minute);
+			if (now.getTime() > bDay.getTime()) {
+				bDay.setFullYear(now.getFullYear() + 1);
+			}
+			console.log(bDay);
+			console.log(now);
+			return (bDay.getTime() - now.getTime()) / 1000;
 		},
 		get isBDay() {
 			return daniel.bday.month === now.getMonth() && daniel.bday.day === now.getDate();
@@ -32,8 +38,15 @@
 	});
 	
 	var age = daniel.age;
-	// alert(age);
 	
 	document.getElementById("age").innerHTML = age;
-	alert(daniel.isBDay);
-}());
+
+	$(document).ready(function () {
+		var msg = document.querySelector('.message');
+		
+		if (daniel.isBDay) {
+			msg.innerText = "HAPPY BIRTHDAY!";
+		}
+	});
+
+}(jQuery));

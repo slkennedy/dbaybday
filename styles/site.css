@@ -11,5 +11,9 @@ body {
   margin: 0 auto;
   border: red solid 1px; }
 
+.flip-clock-wrapper {
+  width: 690px;
+  margin: 0 auto; }
+
 
 /*# sourceMappingURL=site.css.map */
