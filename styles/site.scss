@@ -11,12 +11,16 @@ body {
 	text-align: center;
 	width: 80%;
 	margin: 0 auto;
-	// padding: 20px;
+}
+
+h1 {
+	font-family: 'Fredericka the Great', cursive;
+	font-weight: 400;
+	font-size: 85px;
 }
 
 .flip-clock-wrapper {
 	width: 690px;
-	//margin: 0 auto;
 
 	@media all and (max-width: 600px) {
 		-webkit-transform: scale(0.5);
