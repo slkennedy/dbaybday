@@ -18,7 +18,7 @@ var daniel = {
 		return age;
 	},
 	get timeUntilBDay() {
-		return 3600*24*17;
+		return 3600*24*0;
 	},
 	get isBDay() {
 		return daniel.bday.month === now.getMonth() && daniel.bday.day === now.getDate();
@@ -35,3 +35,4 @@ var age = daniel.age;
 
 document.getElementById("age").innerHTML = age;
 alert(daniel.isBDay);
+alert(now);
