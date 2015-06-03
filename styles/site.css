@@ -8,19 +8,15 @@ body {
 .page-wrapper {
   text-align: center;
   width: 80%;
-  margin: 0 auto;
-  border: red solid 100px;
-  padding: 20px; }
-
-.flip-clock-wrapper {
-  width: 690px;
   margin: 0 auto; }
 
-h1, h2 {
-  margin: 0; }
-
-.clock {
-  margin: 40px; }
+.flip-clock-wrapper {
+  width: 690px; }
+  @media all and (max-width: 600px) {
+    .flip-clock-wrapper {
+      -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      transform: scale(0.5); } }
 
 
 /*# sourceMappingURL=site.css.map */
