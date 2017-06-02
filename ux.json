@@ -5,11 +5,13 @@
     },
     "js": {
         "src": "scripts/**/*.js",
-        "dest": "scripts"
+        "dest": "scripts",
+        "main": "scripts/site.js"
     },
     "watch": [
         "index.html"
     ],
     "server": true,
-    "compileJs": true
+    "compileJs": true,
+    "proxy": false
 }

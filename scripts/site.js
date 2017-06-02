@@ -1,11 +1,11 @@
 (function ($) {
 	var now = new Date();
-	
+
 	var daniel = {
 		bday: {
 			year: 1980,
 			month: 5,
-			day: 3,
+			day: 2,
 			hour: 10,
 			minute: 53
 		},
@@ -13,13 +13,12 @@
 			var age = 0;
 			age = now.getFullYear() - daniel.bday.year;
 			var m = now.getMonth() - daniel.bday.month;
-			if (m < 0 || m === 0 && now.getDate() < daniel.bday.day) {
+			if (m < 0 || m === 0 && now.getDate() < daniel.bday.day && now.getHours() < daniel.bday.hour && now.getMinutes() < daniel.bday.minute) {
 				age--;
 			}
 			return age;
 		},
 		get timeUntilBDay() {
-			var bDay = new Date(now.getFullYear(), daniel.bday.month, daniel.bday.day, daniel.bday.hour, daniel.bday.minute);
 			if (now.getTime() > bDay.getTime()) {
 				bDay.setFullYear(now.getFullYear() + 1);
 			}
@@ -31,6 +30,7 @@
 		}
 	};
 	
+	var bDay = new Date(now.getFullYear(), daniel.bday.month, daniel.bday.day, daniel.bday.hour, daniel.bday.minute);
 	var clock = $('.clock').FlipClock(daniel.timeUntilBDay, {
 		clockFace: 'DailyCounter',
 		countdown: true

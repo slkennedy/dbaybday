@@ -2,9 +2,14 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background: #FDB632;
 	padding: 0;
+    margin: 0;
     color: #111;
     font-family: 'Fredericka the Great', cursive;
 	font-weight: 400;
@@ -64,4 +69,9 @@ h2 {
 
 .clockRow {
 	background-color: #F37338;
-} 
+    padding-top: 15px;
+}
+
+#confetti {
+    position: absolute;
+}
